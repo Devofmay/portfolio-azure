@@ -22,6 +22,21 @@ document.addEventListener("DOMContentLoaded", () => {
     reveals.forEach((el) => observer.observe(el));
   }
 
+  // --- Curseur personnalisé ---
+  const cursor = document.getElementById("customCursor");
+  if (cursor && window.matchMedia("(pointer: fine)").matches) {
+    document.addEventListener("mousemove", (e) => {
+      cursor.style.left = e.clientX + "px";
+      cursor.style.top  = e.clientY + "px";
+      cursor.classList.add("visible");
+    });
+    document.addEventListener("mouseleave", () => cursor.classList.remove("visible"));
+    document.querySelectorAll("a, button").forEach((el) => {
+      el.addEventListener("mouseenter", () => cursor.classList.add("hovering"));
+      el.addEventListener("mouseleave", () => cursor.classList.remove("hovering"));
+    });
+  }
+
   // --- Menu mobile ---
   const toggle = document.querySelector(".nav-toggle");
   const nav = document.querySelector(".nav");

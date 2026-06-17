@@ -1,8 +1,9 @@
 {{define "content"}}
-<section class="page-head">
-  <div class="container">
+<section class="page-head" style="position:relative;overflow:hidden;">
+  <canvas data-particles aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;display:block;"></canvas>
+  <div class="container" style="position:relative;z-index:1;">
     <h1 class="page-title reveal">About me</h1>
-    <p class="page-sub reveal" style="--delay:.1s">Mon parcours, mes compétences, ma façon de travailler.</p>
+    <p class="page-sub reveal" style="--delay:.1s">C'est un reel plaisir de vous parler de moi</p>
   </div>
 </section>
 
@@ -18,10 +19,10 @@
       <div>
         <h2>Qui suis-je</h2>
         <p>
-          Je m'appelle Francky Relex Ndacayisaba. Passionné par le développement
-          web et les nouvelles technologies, j'aime comprendre comment les choses
-          fonctionnent et construire des solutions utiles, propres et durables.
-          Chaque projet est pour moi une occasion d'apprendre et de progresser.
+          Je m'appelle Francky Relex Ndacayisaba. Étudiant en Bachelor Informatique
+          à l'ECE École d'Ingénieurs Paris (2ème année), je me spécialise dans le
+          développement Full-Stack, le Cloud Computing, le DevOps et l'architecture
+          de solutions. Je parle français, anglais et kirundi.
         </p>
       </div>
     </article>
@@ -34,9 +35,11 @@
       <div>
         <h2>Mon parcours</h2>
         <p>
-          Étudiant en informatique, je me forme aux langages et outils du
-          développement moderne : Go, JavaScript, SQL, Git. Je complète mes cours
-          par des projets personnels et des certifications en ligne.
+          ECE École d'Ingénieurs Paris — Bachelor Informatique (depuis mars 2025).
+          J'ai effectué deux stages : Data Analyst Junior chez CUBIKL (juil.–août 2025)
+          et Développeur Full-Stack chez le Groupe Alexandre Brifault (avr.–juil. 2026).
+          Je complète ma formation par des certifications AWS, Datascientest et des
+          projets Cloud déployés en production.
         </p>
       </div>
     </article>
@@ -49,9 +52,11 @@
       <div>
         <h2>Ce que je sais faire</h2>
         <p>
-          Développement back-end en Go, intégration HTML/CSS soignée,
-          bases de données relationnelles, versionnage avec Git, et déploiement
-          d'applications. J'attache beaucoup d'importance à la qualité du code.
+          <strong>Maîtrise :</strong> Python, MySQL.<br>
+          <strong>Pratique :</strong> Linux, JavaScript, Docker, Terraform, PHP, NoSQL.<br>
+          <strong>Notions :</strong> Go, Node.js, React, Next.js, AdonisJS.<br>
+          Déploiement Cloud sur Azure, CI/CD, infrastructure as code avec Terraform,
+          conteneurisation Docker, dashboards Power BI.
         </p>
       </div>
     </article>
@@ -64,9 +69,10 @@
       <div>
         <h2>Ma façon de travailler</h2>
         <p>
-          J'avance par itérations : comprendre le besoin, prototyper vite,
-          améliorer en continu. J'aime travailler en équipe, documenter mon
-          travail et partager ce que j'apprends.
+          J'avance par itérations : comprendre le besoin, livrer vite, améliorer
+          en continu. Bonne communication, esprit d'équipe, adaptabilité, minutie
+          et rigueur — des qualités que j'ai pu mettre en pratique en mission chez
+          des clients réels lors de mes deux stages.
         </p>
       </div>
     </article>
@@ -77,11 +83,12 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></svg>
       </span>
       <div>
-        <h2>Mes passions</h2>
+        <h2>Ce qui me motive</h2>
         <p>
-          Curieux de nature, je m'intéresse aussi au design, à la photographie et
-          au sport. Ces passions nourrissent ma créativité et mon sens du détail
-          dans mes projets techniques.
+          Construire des choses qui fonctionnent en production — pas seulement en
+          local. Que ce soit une API Go déployée sur Azure, un dashboard Power BI
+          pour un client en Afrique de l'Est, ou une plateforme SaaS de trading,
+          j'aime voir l'impact concret de mon travail.
         </p>
       </div>
     </article>
