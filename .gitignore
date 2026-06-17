@@ -1,0 +1,27 @@
+# Contexte local Claude - ne pas versionner
+CLAUDE.md
+
+# Binaires Go
+portfolio-go-revolut/portfolio/portfolio
+*.exe
+
+# Docker
+.dockerignore
+
+# Terraform state (contient des secrets)
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# Azure credentials
+.azure/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+
+.CV-Atle.pdf

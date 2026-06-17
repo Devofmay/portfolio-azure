@@ -1,0 +1,144 @@
+{{define "content"}}
+<section class="page-head">
+  <div class="container">
+    <h1 class="page-title reveal">Portfolio</h1>
+    <p class="page-sub reveal" style="--delay:.08s">Stages, projets et certifications.</p>
+    <div class="chips reveal" style="--delay:.16s">
+      <a href="#stages" class="chip is-active">Tout</a>
+      <a href="#stages" class="chip">Stages</a>
+      <a href="#projets" class="chip">Projets web</a>
+      <a href="#certifs" class="chip">Certifications</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TITLE 1 : STAGES / EXPÉRIENCES ===== -->
+<section class="section" id="stages">
+  <div class="container">
+    <h2 class="section-title reveal">Expériences &amp; stages <span class="title-arrow">›</span></h2>
+
+    <div class="stage-grid">
+      <article class="stage-card reveal">
+        <span class="icon-orb" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </span>
+        <h3>Nom du stage</h3>
+        <p class="stage-date">Juin 2025 — Août 2025</p>
+        <p class="stage-desc">
+          Description du stage : missions principales, technologies utilisées,
+          résultats obtenus. Remplace ce texte par ton expérience réelle.
+        </p>
+        <ul class="tags">
+          <li>Go</li><li>SQL</li><li>Git</li>
+        </ul>
+      </article>
+
+      <article class="stage-card reveal" style="--delay:.12s">
+        <span class="icon-orb orb-soft" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </span>
+        <h3>Nom du stage</h3>
+        <p class="stage-date">Janvier 2025 — Mars 2025</p>
+        <p class="stage-desc">
+          Description du stage : contexte de l'entreprise, responsabilités,
+          compétences développées pendant la mission.
+        </p>
+        <ul class="tags">
+          <li>JavaScript</li><li>API REST</li><li>Docker</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TITLE 2 : PROJETS ===== -->
+<section class="section section-tinted" id="projets">
+  <div class="container">
+    <h2 class="section-title reveal">Projets <span class="title-arrow">›</span></h2>
+
+    <!-- Title 2.1 -->
+    <h3 class="sub-title reveal">Projets web</h3>
+    <div class="grid grid-4">
+      <article class="project-card reveal">
+        <span class="icon-orb" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </span>
+        <h4>Projet n°1</h4>
+        <p>Courte description du projet et de son objectif.</p>
+        <a href="#" class="card-link">Voir le projet →</a>
+      </article>
+      <article class="project-card reveal" style="--delay:.08s">
+        <span class="icon-orb" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-2 9h7l-9 11 2-9H4l9-11z"/></svg>
+        </span>
+        <h4>Projet n°2</h4>
+        <p>Courte description du projet et de son objectif.</p>
+        <a href="#" class="card-link">Voir le projet →</a>
+      </article>
+      <article class="project-card reveal" style="--delay:.16s">
+        <span class="icon-orb" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="10" width="3" height="8"/><rect x="13" y="6" width="3" height="12"/></svg>
+        </span>
+        <h4>Projet n°3</h4>
+        <p>Courte description du projet et de son objectif.</p>
+        <a href="#" class="card-link">Voir le projet →</a>
+      </article>
+      <article class="project-card reveal" style="--delay:.24s">
+        <span class="icon-orb" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </span>
+        <h4>Projet n°4</h4>
+        <p>Courte description du projet et de son objectif.</p>
+        <a href="#" class="card-link">Voir le projet →</a>
+      </article>
+    </div>
+
+    <!-- Title 2.2 -->
+    <h3 class="sub-title reveal">Projets personnels</h3>
+    <div class="grid grid-5">
+      <article class="mini-card reveal"><h4>Projet A</h4><p>Mini description.</p></article>
+      <article class="mini-card reveal" style="--delay:.06s"><h4>Projet B</h4><p>Mini description.</p></article>
+      <article class="mini-card reveal" style="--delay:.12s"><h4>Projet C</h4><p>Mini description.</p></article>
+      <article class="mini-card reveal" style="--delay:.18s"><h4>Projet D</h4><p>Mini description.</p></article>
+      <article class="mini-card reveal" style="--delay:.24s"><h4>Projet E</h4><p>Mini description.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TITLE 3 : CERTIFICATIONS ===== -->
+<section class="section" id="certifs">
+  <div class="container">
+    <h2 class="section-title reveal">Certifications &amp; formations <span class="title-arrow">›</span></h2>
+    <div class="grid grid-4">
+      <article class="cert-card reveal">
+        <span class="icon-orb" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></svg>
+        </span>
+        <h4>Certification 1</h4>
+        <p>Organisme — Année</p>
+      </article>
+      <article class="cert-card reveal" style="--delay:.08s">
+        <span class="icon-orb" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></svg>
+        </span>
+        <h4>Certification 2</h4>
+        <p>Organisme — Année</p>
+      </article>
+      <article class="cert-card reveal" style="--delay:.16s">
+        <span class="icon-orb" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></svg>
+        </span>
+        <h4>Certification 3</h4>
+        <p>Organisme — Année</p>
+      </article>
+      <article class="cert-card reveal" style="--delay:.24s">
+        <span class="icon-orb" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></svg>
+        </span>
+        <h4>Certification 4</h4>
+        <p>Organisme — Année</p>
+      </article>
+    </div>
+  </div>
+</section>
+{{end}}

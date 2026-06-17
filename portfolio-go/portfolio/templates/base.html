@@ -1,0 +1,48 @@
+{{define "base"}}<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{.Title}}</title>
+  <meta name="description" content="Portfolio de Francky Relex Ndacayisaba — développeur.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%232A63F6'/><text x='50' y='68' font-size='52' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>F</text></svg>">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand">
+        <span class="brand-mark" aria-hidden="true">F</span>
+        Francky<span class="brand-dot">.</span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="/" class="nav-link {{if eq .Active "home"}}is-active{{end}}">Home</a>
+        <a href="/about" class="nav-link {{if eq .Active "about"}}is-active{{end}}">About me</a>
+        <a href="/portfolio" class="nav-link {{if eq .Active "portfolio"}}is-active{{end}}">Portfolio</a>
+        <a href="/contact" class="nav-link {{if eq .Active "contact"}}is-active{{end}}">Contact</a>
+      </nav>
+      <a href="/contact" class="header-cta">Me contacter</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    {{template "content" .}}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Francky Relex Ndacayisaba</p>
+      <p class="footer-muted">Conçu &amp; développé en Go</p>
+    </div>
+  </footer>
+
+  <script src="/static/js/main.js" defer></script>
+</body>
+</html>{{end}}

@@ -1,0 +1,72 @@
+{{define "content"}}
+<!-- ===== HERO : P1 / P2 à gauche, PHOTO à droite (structure du croquis) ===== -->
+<section class="hero">
+  <div class="container hero-grid">
+
+    <div class="hero-text">
+      <!-- P1 -->
+      <div class="hero-block reveal">
+        <span class="pill-eyebrow">Bonjour, je suis</span>
+        <h1 class="hero-title">
+          Développeur<br>
+          créatif &amp; <span class="accent">passionné.</span>
+        </h1>
+        <p class="lead">
+          Je conçois des applications web modernes, performantes et élégantes.
+          Du back-end en Go jusqu'aux interfaces soignées, je transforme des idées
+          en produits concrets.
+        </p>
+      </div>
+
+      <!-- P2 -->
+      <div class="hero-block reveal" style="--delay:.15s">
+        <p class="lead-card">
+          Actuellement à la recherche de nouvelles opportunités, j'aime relever
+          des défis techniques et apprendre en continu. Découvrez mes projets,
+          mon parcours, et n'hésitez pas à me contacter.
+        </p>
+        <div class="hero-actions">
+          <a href="/portfolio" class="btn btn-primary">Voir mes projets</a>
+          <a href="/contact" class="btn btn-ghost">Me contacter</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHOTO -->
+    <div class="hero-photo reveal" style="--delay:.25s">
+      <div class="photo-frame">
+        <!-- Remplace par ta photo : static/img/photo.jpg -->
+        <div class="photo-placeholder" role="img" aria-label="Photo de Francky Relex Ndacayisaba">
+          <span class="photo-avatar" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </span>
+          <span>Votre photo ici</span>
+        </div>
+      </div>
+      <div class="photo-badge">
+        <span class="badge-pulse" aria-hidden="true"></span>
+        Disponible pour un stage
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== BANDE DÉFILANTE (chips façon Revolut) ===== -->
+<section class="marquee-section" aria-label="Compétences">
+  <div class="marquee" role="presentation">
+    <div class="marquee-track">
+      <div class="marquee-group">
+        <span>Go</span><span>JavaScript</span><span>HTML / CSS</span><span>SQL</span>
+        <span>Git &amp; GitHub</span><span>Linux</span><span>API REST</span>
+        <span>Docker</span><span>Python</span>
+      </div>
+      <div class="marquee-group" aria-hidden="true">
+        <span>Go</span><span>JavaScript</span><span>HTML / CSS</span><span>SQL</span>
+        <span>Git &amp; GitHub</span><span>Linux</span><span>API REST</span>
+        <span>Docker</span><span>Python</span>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
