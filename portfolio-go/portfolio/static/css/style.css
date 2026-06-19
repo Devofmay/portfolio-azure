@@ -582,7 +582,7 @@ img { max-width: 100%; display: block; }
   font-weight: 700;
   margin-bottom: 8px;
 }
-.about-card p { color: var(--slate); }
+.about-card p { color: var(--slate); text-align: justify; }
 
 /* ---------- Contact ---------- */
 .contact-list {
