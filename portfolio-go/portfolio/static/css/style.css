@@ -584,6 +584,38 @@ img { max-width: 100%; display: block; }
 }
 .about-card p { color: var(--slate); text-align: justify; }
 
+.skills-grid { width: 100%; }
+.skills-grid h2 { font-size: 1.25rem; font-weight: 700; color: var(--navy); margin-bottom: 16px; }
+
+.skill-group { margin-bottom: 14px; }
+.skill-group:last-child { margin-bottom: 0; }
+
+.skill-label {
+  display: block;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 8px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skill-tags span {
+  background: var(--tint);
+  color: var(--navy);
+  font-size: .8rem;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: var(--r-pill);
+  border: 1px solid rgba(42, 99, 246, .15);
+}
+
 /* ---------- Contact ---------- */
 .contact-list {
   display: flex;
